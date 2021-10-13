@@ -5,26 +5,13 @@ public class Felter {
 
     public static int braet(){
 
-        int die1, die2, tsum, point = 1000;
-
-        Scanner scan = new Scanner(System.in);
+        int point = 1000;
 
         while(point < 3000){
 
-            System.out.print("Tryk enter for at rulle: ");
-            System.out.println();
-            scan.nextLine();
+         int tsum = Terning.Die();
 
-            die1 = (int)(Math.random()*6+1);
-            die2 = (int)(Math.random()*6+1);
-            tsum = die1 + die2;
-
-            System.out.println("Terning 1: " + die1);
-            System.out.println("Terning 2: " + die2);
-            System.out.println("Sum: " + tsum);
-            System.out.println();
-
-        //int sum = 2;
+        //"Bræt" med egenskaber
             switch (tsum){
                 case 2:
                     System.out.println("Tårn");
