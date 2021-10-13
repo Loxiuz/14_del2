@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class Terning {
+public class terninger{
 
-    public static int Die(){
+    public static int ToKastSum(){
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Tryk enter for at rulle terninger: ");
+        System.out.print("Tryk 'enter' for at rulle terninger: ");
         scan.nextLine();
 
         int die1, die2, tsum;

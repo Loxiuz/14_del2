@@ -1,16 +1,14 @@
-public class Felter {
+public class felter {
 
 
-    public static int braet(){
+    public static int Braet(){
 
         int point = 1000;
 
-        while(point < 3000){
-
-         int tsum = Terning.Die();
+        while(point <= 3000){
 
         //"Bræt" med egenskaber
-            switch (tsum){
+            switch(terninger.ToKastSum()){ // Terningernes sum der afgører placeringen på brættet
                 case 2:
                     System.out.println("Tårn");
                     point = point + 250;
