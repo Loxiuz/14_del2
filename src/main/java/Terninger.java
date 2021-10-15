@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class terninger{
+public class Terninger{
 
     public static int ToKastSum(){
 

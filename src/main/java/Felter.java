@@ -1,21 +1,21 @@
-public class felter {
+public class Felter{
 
 
-    public static int Braet(){
+    public static int Braet(Spiller spiller){
 
-        int point = 1000;
+  //      int point = 1000;
 
-        while(point <= 3000){
+//        while(point <= 3000){
 
         //"Bræt" med egenskaber
-            switch(terninger.ToKastSum()){ // Terningernes sum der afgører placeringen på brættet
+            switch(Terninger.ToKastSum()){ // Terningernes sum der afgører placeringen på brættet
                 case 2:
                     System.out.println("Tårn");
-                    point = point + 250;
+                    spiller.addPoints(250);
                     break;
                 case 3:
                     System.out.println("Krater");
-                    point = point - 100;
+                    spiller.getKonto().nyTotal(-100);
                     break;
                 case 4:
                     System.out.println("Templets Porte");
@@ -54,10 +54,11 @@ public class felter {
                     break;
             }
 
+
             System.out.println("Point: " + point);
             System.out.println();
 
-        }
+//        }
 
         return point;
     }
