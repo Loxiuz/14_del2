@@ -4,9 +4,11 @@ public class Main {
 
         // Spiller Konto
 
-        Spiller konto1 = new Spiller();
+        //Spiller konto1 = new Spiller();
 
-
+        Konto k1 = new Konto(1000);
+        k1.nyTotal(200);
+        k1.display();
 
 
 

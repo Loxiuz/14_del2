@@ -2,7 +2,8 @@ public class Spiller {
 
     Konto konto = new Konto();
 
-    public Spiller(int startPoint) {
+    public Spiller(int startPoint)
+    {
         konto.setTotal(startPoint);
     }
 
