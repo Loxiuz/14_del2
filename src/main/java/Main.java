@@ -4,7 +4,7 @@ public class Main {
 
         // Spiller Konto
 
-       // Spiller konto1 = new Spiller();
+        Spiller konto1 = new Spiller();
 
 
 
