@@ -11,8 +11,7 @@ int startPoint ;
         konto.addPoint(startPoint);
     }
     // Declaration of Actions " behavior"
-    public Spiller()
-    {   int setTotal;
+    public Spiller(){
         konto.addPoint(startPoint);
     }
 

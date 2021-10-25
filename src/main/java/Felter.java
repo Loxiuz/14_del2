@@ -19,44 +19,37 @@ public class Felter{
                     break;
                 case 5:
                     System.out.println("Den Kolde Ørken");
-                   // point = point - 20;
+                    spiller.addToTotal(20);
                     break;
                 case 6:
                     System.out.println("Den Befæstede By");
-                  //  point = point + 180;
+                    spiller.addToTotal(180);
                     break;
                 case 7:
                     System.out.println("Kloster");
                     break;
                 case 8:
                     System.out.println("Den Sorte Hule");
-                  //  point = point - 70;
+                    spiller.addToTotal(70);
                     break;
                 case 9:
                     System.out.println("Bjerghytterne");
-                  //  point = point + 60;
+                    spiller.addToTotal(60);
                     break;
                 case 10:
                     System.out.println("Varulv-Muren");
-                  //  point = point - 80;
+                    spiller.addToTotal(80);
                     break;
                 case 11:
                     System.out.println("Hullet");
-                 //   point = point - 50;
+                    spiller.addToTotal(50);
                     break;
                 case 12:
                     System.out.println("Guldminen");
-                 //   point = point + 650;
+                    spiller.addToTotal(650);
                     break;
             }
 
-
-            System.out.println("Point: ");
-            System.out.println();
-
-
-
     }
-
 
 }
