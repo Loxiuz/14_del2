@@ -1,66 +1,61 @@
 public class Felter{
 
 
-    public static int Braet(Spiller spiller){
-
-  //      int point = 1000;
-
-//        while(point <= 3000){
+    public Felter(Spiller spiller){
 
         //"Bræt" med egenskaber
-            switch(Terninger.ToKastSum()){ // Terningernes sum der afgører placeringen på brættet
+            switch(RafleBaeger.KastSum()){ // Terningernes sum der afgører placeringen på brættet
                 case 2:
                     System.out.println("Tårn");
-                    spiller.addPoints(250);
+                    spiller.addToTotal(250);
                     break;
                 case 3:
                     System.out.println("Krater");
-                    spiller.getKonto().nyTotal(-100);
+                    spiller.addToTotal(-100);
                     break;
                 case 4:
                     System.out.println("Templets Porte");
-                    point = point + 100;
+                    spiller.addToTotal(100);
                     break;
                 case 5:
                     System.out.println("Den Kolde Ørken");
-                    point = point - 20;
+                   // point = point - 20;
                     break;
                 case 6:
                     System.out.println("Den Befæstede By");
-                    point = point + 180;
+                  //  point = point + 180;
                     break;
                 case 7:
                     System.out.println("Kloster");
                     break;
                 case 8:
                     System.out.println("Den Sorte Hule");
-                    point = point - 70;
+                  //  point = point - 70;
                     break;
                 case 9:
                     System.out.println("Bjerghytterne");
-                    point = point + 60;
+                  //  point = point + 60;
                     break;
                 case 10:
                     System.out.println("Varulv-Muren");
-                    point = point - 80;
+                  //  point = point - 80;
                     break;
                 case 11:
                     System.out.println("Hullet");
-                    point = point - 50;
+                 //   point = point - 50;
                     break;
                 case 12:
                     System.out.println("Guldminen");
-                    point = point + 650;
+                 //   point = point + 650;
                     break;
             }
 
 
-            System.out.println("Point: " + point);
+            System.out.println("Point: ");
             System.out.println();
 
-//        }
 
-        return point;
+
     }
 
 

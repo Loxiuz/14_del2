@@ -8,18 +8,18 @@ int startPoint ;
 
     public void setStartPoint(int startPoint) {
         this.startPoint = startPoint;
-
+        konto.addPoint(startPoint);
     }
     // Declaration of Actions " behavior"
-    public Spiller(int startPoint)
+    public Spiller()
     {   int setTotal;
-        konto.nyTotal(startPoint);
+        konto.addPoint(startPoint);
     }
 
     // Declaration of Actions.
     // Instance method.
     public void addToTotal(int points) {
-        konto.nyTotal(points);
+        konto.addPoint(points);
     }
 
     public Konto getKonto() {
