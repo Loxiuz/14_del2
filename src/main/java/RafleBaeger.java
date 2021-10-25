@@ -6,8 +6,8 @@ public class RafleBaeger {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Tryk 'enter' for at rulle terninger: ");
-        scan.nextLine();
+        // System.out.print("Tryk 'enter' for at rulle terninger: ");
+        // scan.nextLine();
 
         int tsum;
 
@@ -16,10 +16,10 @@ public class RafleBaeger {
 
         tsum = tern1.eyes + tern2.eyes;
 
-        System.out.println("Terning 1: " + tern1);
-        System.out.println("Terning 2: " + tern2);
-        System.out.println("Sum: " + tsum);
-        System.out.println();
+        // System.out.println("Terning 1: " + tern1);
+        // System.out.println("Terning 2: " + tern2);
+       // System.out.println("Sum: " + tsum);
+       // System.out.println();
 
         return tsum;
     }

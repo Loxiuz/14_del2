@@ -11,9 +11,7 @@ int startPoint ;
         konto.addPoint(startPoint);
     }
     // Declaration of Actions " behavior"
-    public Spiller(){
-        konto.addPoint(startPoint);
-    }
+    public Spiller(){konto.addPoint(startPoint);}
 
     // Declaration of Actions.
     // Instance method.
