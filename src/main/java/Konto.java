@@ -1,15 +1,13 @@
 public class Konto {
     int pengeTotal;
 
-    public Konto(int pengetotal) {
-        pengeTotal = pengetotal;
-    }
+    public Konto() {pengeTotal= pengeTotal;}
 
     void display() {
         System.out.println(pengeTotal);
     }
 
-    public void nyTotal(int penge){
+    public void addPoint(int penge){
         pengeTotal += penge;
     }
 
