@@ -8,6 +8,5 @@ public class Main {
         Spiller spiller2 = new Spiller();
         spiller2.setStartPoint(1000);
         spiller2.getKonto().display();
-
     }
 }

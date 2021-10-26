@@ -5,10 +5,16 @@ public class Konto {
         System.out.println(pengeTotal);
     }
 
-    public void addPoint(int penge){
-        pengeTotal += penge;
-        if(pengeTotal<0){
+    public boolean addPoint(int penge){
+        int tjekPenge = pengeTotal + penge;
+
+        if(tjekPenge<0){
             pengeTotal=0;
+            return false;
+        }
+        else {
+            pengeTotal += penge;
+            return true;
         }
     }
 
