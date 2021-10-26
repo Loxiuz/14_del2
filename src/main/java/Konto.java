@@ -1,7 +1,7 @@
 public class Konto {
     int pengeTotal;
 
-    public Konto() {pengeTotal= pengeTotal;}
+    public Konto() {pengeTotal = pengeTotal;}
 
     void display() {
         System.out.println(pengeTotal);
