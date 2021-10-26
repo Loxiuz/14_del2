@@ -9,7 +9,5 @@ public class Main {
         spiller2.setStartPoint(1000);
         spiller2.getKonto().display();
 
-
-
     }
 }
