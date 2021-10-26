@@ -6,9 +6,9 @@ public class Konto {
     }
 
     public boolean addPoint(int penge){
-        int tjekPenge = pengeTotal + penge;
+        int tjekBalance = pengeTotal + penge;
 
-        if(tjekPenge<0){
+        if(tjekBalance<0){
             pengeTotal=0;
             return false;
         }
