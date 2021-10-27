@@ -13,7 +13,6 @@ public class Main {
         spiller2.setStartPoint(START_POINT);
 
         Scanner scan = new Scanner(System.in);
-        String enter = "Tryk 'enter' for at slå terninger";
 
         int i = 0, spillerNr = 0, saldo = 0;
         Felter braet;
@@ -22,7 +21,7 @@ public class Main {
         while (spiller1.getKonto().pengeTotal < MIN_POINT &&
                 spiller2.getKonto().pengeTotal < MIN_POINT) {
 
-            System.out.print(enter); scan.nextLine();
+           // System.out.print("Kast terninger (enter)"); scan.nextLine();
             System.out.println();
 
             //Skifter tur og spiller ud fra lige og ulige tal.
@@ -30,13 +29,13 @@ public class Main {
                 braet = new Felter(spiller1);
                 spillerNr = 1;
                 saldo = spiller1.getKonto().pengeTotal;
-            } else {  // ulige tal
+            } else {  // Ulige tal
                 braet = new Felter(spiller2);
                 spillerNr = 2;
                 saldo = spiller2.getKonto().pengeTotal;
             }
 
-            System.out.println(braet.feltNavn);
+            System.out.println(braet.feltNavn + " [" + braet.feltPoint + " point]");
             System.out.println("Spiller " + spillerNr + " slog_____" + braet.felt);
             System.out.println("Saldo_______________" + saldo + " Point");
             System.out.println();
