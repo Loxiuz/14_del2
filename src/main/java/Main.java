@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        final int MAKS_POINT = 3000, START_POINT = 1000;
+        final int MIN_POINT = 3000; //  Point for at vinde
+        final int START_POINT = 1000; // Antal point når man starter
 
         Spiller spiller1 = new Spiller();
         spiller1.setStartPoint(START_POINT);
@@ -12,29 +13,38 @@ public class Main {
         spiller2.setStartPoint(START_POINT);
 
         Scanner scan = new Scanner(System.in);
-        String enter = "Tryk 'enter' for at slå terninger" ;
+        String enter = "Tryk 'enter' for at slå terninger";
 
-        //Fortsættende løkke indtil en spiller får maks antal point eller højere
-        while(spiller1.getKonto().pengeTotal < MAKS_POINT &&
-                spiller2.getKonto().pengeTotal < MAKS_POINT){
+        int i = 0, spillerNr = 0, saldo = 0;
+        Felter braet;
 
-                System.out.print(enter); scan.nextLine();
-                System.out.println();
-            Felter spiller1_braet = new Felter(spiller1);
-            System.out.println("Spiller 1 slog-----> " + spiller1_braet.kast);
-            System.out.println("Saldo--------------> " + spiller1.getKonto().pengeTotal + " Point");
+        //Fortsættende løkke indtil en spiller får minimum point for sejr eller højere
+        while (spiller1.getKonto().pengeTotal < MIN_POINT &&
+                spiller2.getKonto().pengeTotal < MIN_POINT) {
+
+            System.out.print(enter); scan.nextLine();
             System.out.println();
 
-                System.out.print(enter); scan.nextLine();
-                System.out.println();
-            Felter spiller2_braet = new Felter(spiller2);
-            System.out.println("Spiller 2 slog-----> " + spiller2_braet.kast);
-            System.out.println("Saldo--------------> " + spiller2.getKonto().pengeTotal + " Point");
+            //Skifter tur og spiller ud fra lige og ulige tal.
+            if (i % 2 == 0) {  // Lige tal
+                braet = new Felter(spiller1);
+                spillerNr = 1;
+                saldo = spiller1.getKonto().pengeTotal;
+            } else {  // ulige tal
+                braet = new Felter(spiller2);
+                spillerNr = 2;
+                saldo = spiller2.getKonto().pengeTotal;
+            }
+
+            System.out.println(braet.feltNavn);
+            System.out.println("Spiller " + spillerNr + " slog_____" + braet.felt);
+            System.out.println("Saldo_______________" + saldo + " Point");
             System.out.println();
+
+            i++;
         }
 
-
-
-
+        System.out.print("Spiller " + spillerNr + " vinder ");
+        System.out.println("med " + saldo + " point!");
     }
 }

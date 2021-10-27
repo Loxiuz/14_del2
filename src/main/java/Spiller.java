@@ -2,6 +2,7 @@ public class Spiller {
 
 
     Konto konto = new Konto();
+
 // mangler Declaration of state/Properties.
 // mangler en constructor " objekt"
 int startPoint ;
@@ -23,5 +24,7 @@ int startPoint ;
         return konto;
     }
 
-
+    public static int Kast(){
+        return RafleBaeger.KastSum();
+    }
 }
