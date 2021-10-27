@@ -21,7 +21,7 @@ public class Main {
         while (spiller1.getKonto().pengeTotal < MIN_POINT &&
                 spiller2.getKonto().pengeTotal < MIN_POINT) {
 
-           // System.out.print("Kast terninger (enter)"); scan.nextLine();
+            System.out.print("Kast terninger (enter)"); scan.nextLine();
             System.out.println();
 
             //Skifter tur og spiller ud fra lige og ulige tal.
