@@ -1,0 +1,46 @@
+2	Tårn 		+250
+Du er havnet i et tårn med en masse værdifulde genstande!
+Ingen ville lægge mærke til at der manglede noget… 🙂
+Du har tjent 250kr.
+	
+3	Krater 		-100
+WOOOOW du faldt ned i et krater!!!!
+Heldigvis er der nogen til at hjælpe dig op. 
+Det krævede dog 100 kr at få sat dem igang.
+	
+4	Templets Porte		+100
+Et kæmpe palads er for øjnene af dig.
+Du står ved portene, men bliver ikke lukket ind.
+På vej væk derfra finder du dog 100kr!
+	
+5	Den Kolde Ørken	 	-20
+Du er strandet i den kolde ørken.
+I desperation efter mad og drikke,
+slugte du en 20'er.
+	
+6	Den Befæstede By		+180
+Du tog et job i den befæstede by og tjente 180.
+	
+7	Kloster 		0
+Efter lang tids rejsen, er du kommet til et kloster.
+Munkene lukker dig ind og giver dig mad og ly for natten.
+	
+8	Den Sorte Hule 		-70
+	
+9	Bjerghytterne		+60
+	
+10	Varulv-Muren        -80
+Ved en lang og høj mur hører du hylen i det fjerne…
+DU ER HAVNET VED VAREULV-MUREN!!!
+I din hast væk falder du og mister 80 kr,
+men du får rejst dig og løber videre.
+Skynd dig at kaste igen!
+	
+11	Hullet		-50
+Du kom til at kigge op mens du gik og nu faldt du ned i et hul…
+Du tabte en 50'er.
+	
+12	Guldminen		+650
+JACKPOT! Du fandt en guldmine!
+Du fylder lommerne og en masse andet med guld
+og får det solgt for 650kr.
