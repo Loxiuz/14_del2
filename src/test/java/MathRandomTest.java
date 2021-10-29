@@ -14,6 +14,12 @@ class MathRandomTest {
         int fire = 0;
         int fem = 0;
         int seks = 0;
+        int syv = 0;
+        int otte = 0;
+        int ni = 0;
+        int ti = 0;
+        int elleve = 0;
+        int tolv = 0;
 
         int kast = 0;
 
@@ -21,33 +27,55 @@ class MathRandomTest {
             kast++;
             tern1 = (int) (Math.random() * 6 + 1);
             tern2 = (int) (Math.random() * 6 + 1);
+            tsum = tern1 + tern2;
 
-            if (tern1 == 1 || tern2 == 1) {
-                en++;}
-
-            if (tern1 == 2 || tern2 == 2) {
+            if (tsum == 2) {
                 to++;}
 
-            if (tern1 == 3 || tern2 == 3) {
+            if (tsum == 3) {
                 tre++;}
 
-            if (tern1 == 4 || tern2 == 4) {
+            if (tsum == 4) {
                 fire++;}
 
-            if (tern1 == 5 || tern2 == 5) {
+            if (tsum == 5) {
                 fem++;}
 
-            if (tern1 == 6 || tern2 == 6) {
+            if (tsum == 6) {
                 seks++;}
+
+            if (tsum == 7) {
+                syv++;}
+
+            if (tsum == 8) {
+                otte++;}
+
+            if (tsum == 9) {
+                ni++;}
+
+            if (tsum == 10) {
+                ti++;}
+
+            if (tsum == 11) {
+                elleve++;}
+
+            if (tsum == 12) {
+                tolv++;}
         }
 
-        System.out.println("Efter 1000 kast var der:");
-        System.out.println(en + " enere");
-        System.out.println(to + " toere");
-        System.out.println(tre + " treere");
-        System.out.println(fire + " firere");
-        System.out.println(fem + " femmere");
-        System.out.println(seks + " seksere");
+        System.out.println("Efter 1000 kast var der sum på:");
+        System.out.println("2 = " + to);
+        System.out.println("3 = " + tre);
+        System.out.println("4 = " + fire );
+        System.out.println("5 = " + fem);
+        System.out.println("6 = " + seks);
+        System.out.println("7 = " + syv);
+        System.out.println("8 = " + otte);
+        System.out.println("9 = " + ni);
+        System.out.println("10 = " + ti);
+        System.out.println("11 = " + elleve);
+        System.out.println("12 = " + tolv);
+
 
     }
 }
