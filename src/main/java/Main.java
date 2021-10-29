@@ -35,6 +35,10 @@ public class Main {
                 saldo = spiller2.getKonto().pengeTotal;
             }
 
+            if (braet.felt == 10){ //Ekstra tur på felt 10
+                i--;
+            }
+
             System.out.println("Spiller " + spillerNr + " slog_____" + braet.felt);
             System.out.println(braet.feltBeskrivelse);
             System.out.println("Saldo_______________" + saldo + " Point");
