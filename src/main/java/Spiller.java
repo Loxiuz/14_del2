@@ -1,7 +1,7 @@
 public class Spiller {
 
 
-    Konto konto = new Konto();
+    private Konto konto = new Konto();
 
     int startPoint ;
 

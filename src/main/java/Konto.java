@@ -1,10 +1,6 @@
 public class Konto {
     int pengeTotal;
 
-    void display() {
-        System.out.println(pengeTotal);
-    }
-
     public boolean addPoint(int penge){
         int tjekBalance = pengeTotal + penge;
 
