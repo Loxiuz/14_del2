@@ -1,7 +1,6 @@
 public class RafleBaeger {
 
 
-
     public static int KastSum(){
 
         int tsum;
