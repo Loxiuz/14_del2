@@ -1,11 +1,10 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class MathRandomTest {
 
     @Test
     void kastSum() {
+
         int tern1;
         int tern2;
 
