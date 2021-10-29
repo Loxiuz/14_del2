@@ -21,7 +21,7 @@ class MathRandomTest {
         int elleve = 0;
         int tolv = 0;
 
-        int kast = 0;
+        int kast = 0,tsum;
 
         while (kast < 1000) {
             kast++;
