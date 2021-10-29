@@ -35,8 +35,8 @@ public class Main {
                 saldo = spiller2.getKonto().pengeTotal;
             }
 
-            System.out.println(braet.feltNavn + " [" + braet.feltPoint + " point]");
             System.out.println("Spiller " + spillerNr + " slog_____" + braet.felt);
+            System.out.println(braet.feltBeskrivelse);
             System.out.println("Saldo_______________" + saldo + " Point");
             System.out.println();
 
